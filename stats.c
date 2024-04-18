@@ -61,7 +61,7 @@ void print_array(unsigned char *data, const int length) {
 }
 
 unsigned char find_mean(unsigned char *data, unsigned int length) {
-  int sum = data[0];
+  int sum = 0;
   for (int i=0; i<length; i++)
     sum += data[i];
   return sum / length;
